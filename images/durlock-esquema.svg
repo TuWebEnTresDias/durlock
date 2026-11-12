@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 640" role="img" aria-labelledby="title desc">
+  <title id="title">Esquema ilustrativo de un sistema de Durlock</title>
+  <desc id="desc">Representación conceptual de placas de yeso y una estructura de perfiles metálicos.</desc>
+  <defs>
+    <linearGradient id="paper" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f8f8f0"/>
+      <stop offset="1" stop-color="#e9eedf"/>
+    </linearGradient>
+    <linearGradient id="board" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fffef9"/>
+      <stop offset="1" stop-color="#e9ece1"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="14" stdDeviation="16" flood-color="#26372d" flood-opacity=".12"/>
+    </filter>
+    <pattern id="dots" width="28" height="28" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1.2" fill="#718168" opacity=".17"/>
+    </pattern>
+  </defs>
+  <rect width="900" height="640" rx="34" fill="url(#paper)"/>
+  <circle cx="777" cy="104" r="112" fill="#d9eb76" opacity=".24"/>
+  <rect x="0" y="0" width="900" height="640" rx="34" fill="url(#dots)" opacity=".35"/>
+  <text x="58" y="65" fill="#65764a" font-family="system-ui,-apple-system,sans-serif" font-size="15" font-weight="800" letter-spacing="3">DURLOCK · ESQUEMA ILUSTRATIVO</text>
+  <text x="58" y="112" fill="#202b28" font-family="system-ui,-apple-system,sans-serif" font-size="32" font-weight="750" letter-spacing="-1">Una pared, vista por dentro</text>
+
+  <g filter="url(#shadow)">
+    <rect x="52" y="148" width="796" height="404" rx="28" fill="#f7f7ef" stroke="#d8dfce" stroke-width="2"/>
+  </g>
+
+  <g font-family="system-ui,-apple-system,sans-serif">
+    <text x="112" y="196" fill="#758344" font-size="13" font-weight="800" letter-spacing="2">01 / PLACA</text>
+    <text x="565" y="196" fill="#758344" font-size="13" font-weight="800" letter-spacing="2">02 / ESTRUCTURA</text>
+  </g>
+
+  <!-- Cara visible de la placa -->
+  <g>
+    <rect x="112" y="218" width="334" height="246" rx="8" fill="url(#board)" stroke="#33443b" stroke-width="4"/>
+    <path d="M279 220v242" stroke="#d4d9ce" stroke-width="3"/>
+    <path d="M120 228h318" stroke="#ffffff" stroke-width="3" opacity=".85"/>
+    <g fill="#66755c">
+      <circle cx="138" cy="250" r="4"/><circle cx="262" cy="250" r="4"/><circle cx="296" cy="250" r="4"/><circle cx="420" cy="250" r="4"/>
+      <circle cx="138" cy="340" r="4"/><circle cx="262" cy="340" r="4"/><circle cx="296" cy="340" r="4"/><circle cx="420" cy="340" r="4"/>
+      <circle cx="138" cy="432" r="4"/><circle cx="262" cy="432" r="4"/><circle cx="296" cy="432" r="4"/><circle cx="420" cy="432" r="4"/>
+    </g>
+    <g fill="none" stroke="#a7b094" stroke-width="1.5" opacity=".8">
+      <path d="M134 250h8m-4-4v8M258 340h8m-4-4v8M416 432h8m-4-4v8"/>
+    </g>
+  </g>
+
+  <!-- Separación esquemática entre la placa y los perfiles -->
+  <g fill="none" stroke="#899777" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M465 340h54"/>
+    <path d="m505 325 15 15-15 15"/>
+  </g>
+
+  <!-- Estructura con montantes y soleras -->
+  <g>
+    <rect x="548" y="218" width="238" height="246" rx="8" fill="#edf1e5" stroke="#d0d9c8" stroke-width="2"/>
+    <path d="M570 246h193v20H584v150h165v20H570z" fill="#d9eb76" stroke="#3d5143" stroke-width="4" stroke-linejoin="round"/>
+    <path d="M625 267v148M690 267v148" fill="none" stroke="#5b6b59" stroke-width="12" stroke-linecap="round"/>
+    <path d="M625 267v148M690 267v148" fill="none" stroke="#f4f4e9" stroke-width="3" stroke-linecap="round" opacity=".9"/>
+    <path d="M584 312h165M584 360h165" fill="none" stroke="#a6b58b" stroke-width="3" stroke-dasharray="6 8"/>
+    <circle cx="625" cy="290" r="4" fill="#33443b"/><circle cx="690" cy="290" r="4" fill="#33443b"/>
+    <circle cx="625" cy="392" r="4" fill="#33443b"/><circle cx="690" cy="392" r="4" fill="#33443b"/>
+  </g>
+
+  <g font-family="system-ui,-apple-system,sans-serif">
+    <rect x="112" y="493" width="334" height="36" rx="18" fill="#e7ecd9"/>
+    <circle cx="134" cy="511" r="5" fill="#758c32"/>
+    <text x="150" y="516" fill="#435348" font-size="14" font-weight="700">Placas de yeso</text>
+    <rect x="548" y="493" width="238" height="36" rx="18" fill="#e7ecd9"/>
+    <circle cx="570" cy="511" r="5" fill="#758c32"/>
+    <text x="586" y="516" fill="#435348" font-size="14" font-weight="700">Perfiles metálicos</text>
+    <text x="450" y="585" fill="#69766a" font-size="13" font-weight="650" text-anchor="middle">Representación conceptual · no corresponde a una obra realizada</text>
+  </g>
+</svg>
